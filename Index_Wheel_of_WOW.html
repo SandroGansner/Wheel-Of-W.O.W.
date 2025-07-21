@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>WHEEL OF W.O.W.</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="slot-bg"></div>
+  <main>
+    <div class="slot-frame">
+      <img src="lenzerheide_logo.gif" class="lwow-logo" alt="Lenzerheide Logo Animation">
+      <div class="wow-title">WHEEL OF W.O.W.</div>
+      <div id="stats-counter"></div>
+      <div id="spin-counter" class="spin-counter"></div>
+      <div class="slotmachine">
+        <div class="reel" id="reel1"></div>
+        <div class="reel" id="reel2"></div>
+        <div class="reel" id="reel3"></div>
+      </div>
+      <button id="spin-btn">SPIN!</button>
+      <div id="result"></div>
+    </div>
+    <div class="legend-bar">
+      <div class="legend-item">
+        <span class="legend-symbol"><img src="nino.png" alt="nino"></span>
+        Hauptpreis
+        <span class="legend-freq">(max. 100x)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-symbol"><img src="bk.jpg" alt="BK"></span>
+        Lostopf
+        <span class="legend-freq">(Lead)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-symbol"><img src="bike.png" alt="Bike"></span>
+        Bike-Merch
+        <span class="legend-freq">(max. 100x)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-symbol"><img src="socks.png" alt="Socken"></span>
+        Socken
+        <span class="legend-freq">(max. 100x)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-symbol"><span class="legend-wow">W.O.W. Special</span></span>
+        <span class="legend-freq">(Trost)</span>
+      </div>
+    </div>
+    <div class="slot-hinweis">
+      Hinweis: Maximal 1 Gewinn pro Spieler/Sitzung (3 Versuche)! Nach einem Preis erscheint kein weiterer mehr. Socken, Bike-Merch und Hauptpreis sind je auf 100 Stück limitiert. Der Lostopf (BK) kann beliebig oft ausgespielt werden.
+    </div>
+  </main>
+  <canvas id="confetti"></canvas>
+  <script src="slotmachine.js"></script>
+</body>
+</html>
